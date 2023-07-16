@@ -12,7 +12,7 @@ for net in $(cat CN.txt) ; do
   echo "add list=CN address=$net comment=CHINA_IP_LIST"
 done
 
-} > ../CN.rsc
+} > ../IMPORT_CN_IPLIST.rsc
 
 cd ..
 rm -rf ./pbr
