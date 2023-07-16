@@ -6,13 +6,13 @@ ip段信息取自 [china-ip-list](https://github.com/mayaxcn/china-ip-list)
 
 策略路由分流的实现方法：
 
-**CN.rsc** 是往Firewall - address lists 里生ip段列表。
+**IMPORT_CN_IPLIST.rsc** 是往Firewall - address lists 里生ip段列表。
 ```
 /file remove [find name="CN.rsc"]
-/tool fetch url="https://cdn.jsdelivr.net/gh/GitHubd3b7c/chnroute@main/CN.rsc"
-:if ([:len [/file find name=CN.rsc]] > 0) do={
+/tool fetch url="https://ghproxy.com/https://raw.githubusercontent.com/czwstc/ros_ip_list/main/IMPORT_CN_IPLIST.rsc"
+:if ([:len [/file find name=IMPORT_CN_IPLIST.rsc]] > 0) do={
 /ip firewall address-list remove [find comment="CHINA_IP_LIST"]
-/import CN.rsc
+/import IMPORT_CN_IPLIST.rsc
 }
 ```
 
