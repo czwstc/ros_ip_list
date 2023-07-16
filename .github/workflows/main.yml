@@ -2,7 +2,7 @@ name: Build IPLIST
 
 on:
   schedule:
-    - cron: "2 0/1 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -12,10 +12,15 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: download cidr
+    - name: download cn cidr
       run: |
         chmod +x ros-gen-CN.sh
         ./ros-gen-CN.sh
+        
+    - name: download google cidr
+      run: |
+        chmod +x ros-gen-Google.sh
+        ./ros-gen-Google.sh
         
     - name: Commit & Push changes
       uses: actions-js/push@master
