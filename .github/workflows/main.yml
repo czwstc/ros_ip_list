@@ -14,8 +14,8 @@ jobs:
 
     - name: download cidr
       run: |
-        chmod +x ros-dpbr.sh
-        ./ros-dpbr.sh
+        chmod +x ros-gen-CN.sh
+        ./ros-gen-CN.sh
         
     - name: Commit & Push changes
       uses: actions-js/push@master
