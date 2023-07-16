@@ -8,7 +8,7 @@ jq -r '.prefixes[] | select(has("ipv4Prefix")) | .ipv4Prefix' goog.json | cut -d
 {
 echo "/ip firewall address-list"
 
-for net in $(cat google.txt.txt) ; do
+for net in $(cat google.txt) ; do
   echo "add list=Google address=$net comment=GOOGLE_IP_LIST"
 done
 
