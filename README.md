@@ -1,5 +1,5 @@
 ## 由Github Action自动构建的RouterOS Address List
-![Status]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/czwstc/ros_ip_list/actions/workflows/main.yml/badge.svg))
+![Status](https://github.com/czwstc/ros_ip_list/actions/workflows/main.yml/badge.svg)
 
 ### 已添加的IP Range：
 CN IP：
