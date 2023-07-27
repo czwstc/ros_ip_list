@@ -4042,6 +4042,7 @@ add list=CN address=103.157.254.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.158.0.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.158.8.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.158.16.0/23 comment=CHINA_IP_LIST
+add list=CN address=103.158.74.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.158.190.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.158.200.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.158.224.0/23 comment=CHINA_IP_LIST
