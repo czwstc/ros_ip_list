@@ -4563,6 +4563,7 @@ add list=CN address=103.216.64.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.216.108.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.216.136.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.216.152.0/22 comment=CHINA_IP_LIST
+add list=CN address=103.216.156.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.216.224.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.216.228.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.216.240.0/22 comment=CHINA_IP_LIST
