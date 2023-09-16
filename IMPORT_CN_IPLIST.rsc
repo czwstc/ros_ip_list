@@ -4612,6 +4612,7 @@ add list=CN address=103.218.80.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.218.84.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.218.88.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.218.92.0/22 comment=CHINA_IP_LIST
+add list=CN address=103.218.178.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.218.192.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.218.196.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.218.200.0/22 comment=CHINA_IP_LIST
