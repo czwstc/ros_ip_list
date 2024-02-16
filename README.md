@@ -28,7 +28,7 @@ Google IP:
 ```
 /file remove [find name="IMPORT_GOOGLE_IPLIST.rsc"]
 /tool fetch url="https://ghproxy.com/https://raw.githubusercontent.com/czwstc/ros_ip_list/main/IMPORT_GOOGLE_IPLIST.rsc"
-:if ([:len [/file find name=IMPORT_CN_IPLIST.rsc]] > 0) do={
+:if ([:len [/file find name=IMPORT_GOOGLE_IPLIST.rsc]] > 0) do={
 /ip firewall address-list remove [find comment="GOOGLE_IP_LIST"]
 /import IMPORT_GOOGLE_IPLIST.rsc
 }
