@@ -6227,6 +6227,7 @@ add list=CN address=157.15.200.0/23 comment=CHINA_IP_LIST
 add list=CN address=157.18.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=157.20.33.0/24 comment=CHINA_IP_LIST
 add list=CN address=157.20.136.0/23 comment=CHINA_IP_LIST
+add list=CN address=157.20.194.0/23 comment=CHINA_IP_LIST
 add list=CN address=157.61.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=157.119.8.0/22 comment=CHINA_IP_LIST
 add list=CN address=157.119.12.0/22 comment=CHINA_IP_LIST
