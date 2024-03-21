@@ -14,7 +14,6 @@ add list=Google address=34.3.8.0/21 comment=GOOGLE_IP_LIST
 add list=Google address=34.3.16.0/20 comment=GOOGLE_IP_LIST
 add list=Google address=34.3.32.0/19 comment=GOOGLE_IP_LIST
 add list=Google address=34.3.64.0/18 comment=GOOGLE_IP_LIST
-add list=Google address=34.3.128.0/17 comment=GOOGLE_IP_LIST
 add list=Google address=34.4.0.0/14 comment=GOOGLE_IP_LIST
 add list=Google address=34.8.0.0/13 comment=GOOGLE_IP_LIST
 add list=Google address=34.16.0.0/12 comment=GOOGLE_IP_LIST
