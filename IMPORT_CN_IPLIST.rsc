@@ -176,6 +176,7 @@ add list=CN address=39.128.0.0/10 comment=CHINA_IP_LIST
 add list=CN address=40.72.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=40.125.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=40.126.64.0/18 comment=CHINA_IP_LIST
+add list=CN address=40.162.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=42.0.0.0/22 comment=CHINA_IP_LIST
 add list=CN address=42.0.8.0/21 comment=CHINA_IP_LIST
 add list=CN address=42.0.16.0/21 comment=CHINA_IP_LIST
