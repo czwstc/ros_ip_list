@@ -3533,7 +3533,6 @@ add list=CN address=103.103.12.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.103.16.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.103.36.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.103.72.0/22 comment=CHINA_IP_LIST
-add list=CN address=103.103.176.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.103.188.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.103.200.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.103.204.0/22 comment=CHINA_IP_LIST
