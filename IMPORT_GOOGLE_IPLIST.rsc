@@ -48,15 +48,10 @@ add list=Google address=108.59.80.0/20 comment=GOOGLE_IP_LIST
 add list=Google address=108.170.192.0/18 comment=GOOGLE_IP_LIST
 add list=Google address=108.177.0.0/17 comment=GOOGLE_IP_LIST
 add list=Google address=130.211.0.0/16 comment=GOOGLE_IP_LIST
-add list=Google address=136.22.160.0/20 comment=GOOGLE_IP_LIST
-add list=Google address=136.22.176.0/21 comment=GOOGLE_IP_LIST
-add list=Google address=136.22.184.0/23 comment=GOOGLE_IP_LIST
-add list=Google address=136.22.186.0/24 comment=GOOGLE_IP_LIST
 add list=Google address=142.250.0.0/15 comment=GOOGLE_IP_LIST
 add list=Google address=146.148.0.0/17 comment=GOOGLE_IP_LIST
 add list=Google address=152.65.222.0/23 comment=GOOGLE_IP_LIST
 add list=Google address=152.65.224.0/19 comment=GOOGLE_IP_LIST
-add list=Google address=162.120.192.0/19 comment=GOOGLE_IP_LIST
 add list=Google address=162.216.148.0/22 comment=GOOGLE_IP_LIST
 add list=Google address=162.222.176.0/21 comment=GOOGLE_IP_LIST
 add list=Google address=172.110.32.0/21 comment=GOOGLE_IP_LIST
