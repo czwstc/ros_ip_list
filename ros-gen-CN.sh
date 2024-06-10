@@ -19,7 +19,7 @@ done
 {
 echo "/ip firewall address-list"
 
-for net in $(cat CN.txt) ; do
+for net in $(grep -v '^#' CN.txt) ; do
   echo "add list=CN address=$net comment=CHINA_IP_LIST_INTERNAL"
 done
 echo "add list=CN address=10.0.0.0/8 comment=CHINA_IP_LIST_INTERNAL"
