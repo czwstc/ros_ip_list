@@ -3,7 +3,7 @@
 
 ### 已添加的IP Range：
 CN IP：
-ip段信息取自 [[China-ip-list](https://github.com/misakaio/chnroutes2)
+ip段信息取自 [China-ip-list](https://github.com/misakaio/chnroutes2)
 
 Google IP:
 ip段信息取自 [Google-ip-list](https://support.google.com/a/answer/10026322?hl=en)
