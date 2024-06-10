@@ -3,7 +3,7 @@
 
 ### 已添加的IP Range：
 CN IP：
-ip段信息取自 [china-ip-list](https://github.com/mayaxcn/china-ip-list)
+ip段信息取自 [[China-ip-list](https://github.com/misakaio/chnroutes2)
 
 Google IP:
 ip段信息取自 [Google-ip-list](https://support.google.com/a/answer/10026322?hl=en)
@@ -22,7 +22,16 @@ CN IP：
 /import IMPORT_CN_IPLIST.rsc
 }
 ```
-
+CN IP with Internal IP：
+**IMPORT_CN_IPLIST_INTERNAL.rsc** 是往Firewall - address lists 里生ip段列表。
+```
+/file remove [find name="IMPORT_CN_IPLIST_INTERNAL.rsc"]
+/tool fetch url="https://ghproxy.com/https://raw.githubusercontent.com/czwstc/ros_ip_list/main/IMPORT_CN_IPLIST_INTERNAL.rsc"
+:if ([:len [/file find name=IMPORT_CN_IPLIST_INTERNAL.rsc]] > 0) do={
+/ip firewall address-list remove [find comment="CHINA_IP_LIST_INTERNAL"]
+/import IMPORT_CN_IPLIST_INTERNAL.rsc
+}
+```
 Google IP:
 **IMPORT_GOOGLE_IPLIST.rsc** 是往Firewall - address lists 里生ip段列表。
 ```
