@@ -66,7 +66,6 @@ add list=CN_WITH_IIP address=27.106.204.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=27.109.124.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=27.112.0.0/21 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=27.112.80.0/23 comment=CHINA_IP_LIST_INTERNAL
-add list=CN_WITH_IIP address=27.112.82.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=27.112.84.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=27.115.0.0/17 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=27.128.0.0/15 comment=CHINA_IP_LIST_INTERNAL
