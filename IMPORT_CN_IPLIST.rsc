@@ -3418,8 +3418,7 @@ add list=CN address=220.113.160.0/20 comment=CHINA_IP_LIST
 add list=CN address=220.113.180.0/22 comment=CHINA_IP_LIST
 add list=CN address=220.113.184.0/22 comment=CHINA_IP_LIST
 add list=CN address=220.113.224.0/19 comment=CHINA_IP_LIST
-add list=CN address=220.114.64.0/21 comment=CHINA_IP_LIST
-add list=CN address=220.114.248.0/22 comment=CHINA_IP_LIST
+add list=CN address=220.114.250.0/23 comment=CHINA_IP_LIST
 add list=CN address=220.115.8.0/21 comment=CHINA_IP_LIST
 add list=CN address=220.115.16.0/20 comment=CHINA_IP_LIST
 add list=CN address=220.115.228.0/22 comment=CHINA_IP_LIST
