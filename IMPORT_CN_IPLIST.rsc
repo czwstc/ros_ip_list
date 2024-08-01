@@ -1040,7 +1040,7 @@ add list=CN address=103.126.124.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.131.152.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.131.168.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.132.212.0/23 comment=CHINA_IP_LIST
-add list=CN address=103.133.128.0/24 comment=CHINA_IP_LIST
+add list=CN address=103.133.128.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.135.160.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.135.192.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.135.194.0/24 comment=CHINA_IP_LIST
