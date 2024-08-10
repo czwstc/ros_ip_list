@@ -763,6 +763,7 @@ add list=CN_WITH_IIP address=103.17.40.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=103.19.46.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=103.19.64.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=103.19.232.0/22 comment=CHINA_IP_LIST_INTERNAL
+add list=CN_WITH_IIP address=103.20.32.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=103.20.112.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=103.20.248.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=103.21.116.0/22 comment=CHINA_IP_LIST_INTERNAL
@@ -3078,8 +3079,7 @@ add list=CN_WITH_IIP address=210.51.26.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.32.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.34.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.36.0/22 comment=CHINA_IP_LIST_INTERNAL
-add list=CN_WITH_IIP address=210.51.40.0/23 comment=CHINA_IP_LIST_INTERNAL
-add list=CN_WITH_IIP address=210.51.42.0/24 comment=CHINA_IP_LIST_INTERNAL
+add list=CN_WITH_IIP address=210.51.40.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.44.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.46.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.48.0/21 comment=CHINA_IP_LIST_INTERNAL
