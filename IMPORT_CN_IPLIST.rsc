@@ -1024,6 +1024,7 @@ add list=CN address=103.96.215.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.96.224.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.97.60.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.97.112.0/24 comment=CHINA_IP_LIST
+add list=CN address=103.98.0.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.98.44.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.98.125.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.98.127.0/24 comment=CHINA_IP_LIST
