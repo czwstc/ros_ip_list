@@ -464,7 +464,6 @@ add list=CN address=45.153.128.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.157.70.0/23 comment=CHINA_IP_LIST
 add list=CN address=45.192.64.0/19 comment=CHINA_IP_LIST
 add list=CN address=45.199.167.0/24 comment=CHINA_IP_LIST
-add list=CN address=45.204.112.0/20 comment=CHINA_IP_LIST
 add list=CN address=45.248.8.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.248.110.0/24 comment=CHINA_IP_LIST
 add list=CN address=45.249.212.0/22 comment=CHINA_IP_LIST
