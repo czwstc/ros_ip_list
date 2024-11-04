@@ -21,6 +21,11 @@ jobs:
       run: |
         chmod +x ros-gen-Google.sh
         ./ros-gen-Google.sh
+
+    - name: download telegram cidr
+      run: |
+        chmod +x ros-gen-TG.sh
+        ./ros-gen-TG.sh
         
     - name: Commit & Push changes
       uses: actions-js/push@master
