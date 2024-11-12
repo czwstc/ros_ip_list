@@ -2887,7 +2887,7 @@ add list=CN address=156.232.10.0/23 comment=CHINA_IP_LIST
 add list=CN address=156.232.13.0/24 comment=CHINA_IP_LIST
 add list=CN address=156.236.119.0/24 comment=CHINA_IP_LIST
 add list=CN address=156.239.0.0/20 comment=CHINA_IP_LIST
-add list=CN address=156.239.96.0/19 comment=CHINA_IP_LIST
+add list=CN address=156.239.64.0/18 comment=CHINA_IP_LIST
 add list=CN address=156.239.224.0/19 comment=CHINA_IP_LIST
 add list=CN address=156.247.8.0/22 comment=CHINA_IP_LIST
 add list=CN address=156.247.12.0/23 comment=CHINA_IP_LIST
