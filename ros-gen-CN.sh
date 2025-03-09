@@ -2,9 +2,13 @@
 mkdir -p ./pbr
 cd ./pbr
 
-# AS4809 BGP
-wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
-#wget --no-check-certificate -c -O CN.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+# China IP address list
+wget --no-check-certificate -c -O CN1.txt https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
+wget --no-check-certificate -c -O CN2.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+
+# IP address aggregator
+# Combine both files and remove duplicates, then save to combined.txt
+cat CN1.txt CN2.txt | sort | uniq > CN.txt
 
 {
 echo "/ip firewall address-list"
