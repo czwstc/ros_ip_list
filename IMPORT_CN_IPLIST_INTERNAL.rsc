@@ -10766,7 +10766,6 @@ add list=CN_WITH_IIP address=45.80.188.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=45.80.190.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=45.81.34.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=45.85.76.0/22 comment=CHINA_IP_LIST_INTERNAL
-add list=CN_WITH_IIP address=45.91.83.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=45.92.158.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=47.112.0.0/13 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=47.120.0.0/15 comment=CHINA_IP_LIST_INTERNAL
