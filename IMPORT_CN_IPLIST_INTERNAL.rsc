@@ -11295,6 +11295,7 @@ add list=CN_WITH_IIP address=93.183.14.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=93.183.18.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=93.187.128.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=94.191.0.0/17 comment=CHINA_IP_LIST_INTERNAL
+add list=CN_WITH_IIP address=98.158.28.0/22 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=98.96.246.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=10.0.0.0/8 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=172.16.0.0/12 comment=CHINA_IP_LIST_INTERNAL
