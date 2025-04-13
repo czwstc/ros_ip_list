@@ -68,6 +68,7 @@ add list=Google address=172.217.0.0/16 comment=GOOGLE_IP_LIST
 add list=Google address=172.253.0.0/16 comment=GOOGLE_IP_LIST
 add list=Google address=173.194.0.0/16 comment=GOOGLE_IP_LIST
 add list=Google address=173.255.112.0/20 comment=GOOGLE_IP_LIST
+add list=Google address=192.104.160.0/23 comment=GOOGLE_IP_LIST
 add list=Google address=192.158.28.0/22 comment=GOOGLE_IP_LIST
 add list=Google address=192.178.0.0/15 comment=GOOGLE_IP_LIST
 add list=Google address=193.186.4.0/24 comment=GOOGLE_IP_LIST
@@ -84,3 +85,4 @@ add list=Google address=209.85.128.0/17 comment=GOOGLE_IP_LIST
 add list=Google address=216.58.192.0/19 comment=GOOGLE_IP_LIST
 add list=Google address=216.73.80.0/20 comment=GOOGLE_IP_LIST
 add list=Google address=216.239.32.0/19 comment=GOOGLE_IP_LIST
+add list=Google address=216.252.220.0/22 comment=GOOGLE_IP_LIST
