@@ -257,7 +257,7 @@ add list=CN address=102.210.144.0/24 comment=CHINA_IP_LIST
 add list=CN address=102.210.146.0/23 comment=CHINA_IP_LIST
 add list=CN address=102.211.48.0/23 comment=CHINA_IP_LIST
 add list=CN address=102.211.51.0/24 comment=CHINA_IP_LIST
-add list=CN address=102.218.212.0/24 comment=CHINA_IP_LIST
+add list=CN address=102.218.212.0/23 comment=CHINA_IP_LIST
 add list=CN address=102.218.214.0/24 comment=CHINA_IP_LIST
 add list=CN address=102.219.144.0/22 comment=CHINA_IP_LIST
 add list=CN address=102.219.156.0/22 comment=CHINA_IP_LIST
