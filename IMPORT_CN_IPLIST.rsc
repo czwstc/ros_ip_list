@@ -8570,6 +8570,7 @@ add list=CN address=220.114.250.0/23 comment=CHINA_IP_LIST
 add list=CN address=220.152.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=220.154.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=220.154.128.0/22 comment=CHINA_IP_LIST
+add list=CN address=220.154.144.0/24 comment=CHINA_IP_LIST
 add list=CN address=220.155.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=220.158.240.0/22 comment=CHINA_IP_LIST
 add list=CN address=220.160.0.0/11 comment=CHINA_IP_LIST
