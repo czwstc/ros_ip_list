@@ -5798,10 +5798,6 @@ add list=CN address=166.111.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=167.139.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=167.189.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=167.220.244.0/22 comment=CHINA_IP_LIST
-add list=CN address=168.159.144.0/21 comment=CHINA_IP_LIST
-add list=CN address=168.159.152.0/22 comment=CHINA_IP_LIST
-add list=CN address=168.159.156.0/23 comment=CHINA_IP_LIST
-add list=CN address=168.159.158.0/24 comment=CHINA_IP_LIST
 add list=CN address=168.160.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=168.160.0.0/17 comment=CHINA_IP_LIST
 add list=CN address=168.160.152.0/24 comment=CHINA_IP_LIST
