@@ -8020,7 +8020,6 @@ add list=CN_WITH_IIP address=210.5.0.0/19 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.5.128.0/19 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.5.128.0/20 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.5.144.0/20 comment=CHINA_IP_LIST_INTERNAL
-add list=CN_WITH_IIP address=210.5.22.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.5.56.0/21 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.51.0.0/16 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=210.52.0.0/15 comment=CHINA_IP_LIST_INTERNAL
