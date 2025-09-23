@@ -453,6 +453,8 @@ add list=CN address=103.116.228.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.116.40.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.116.64.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.116.76.0/22 comment=CHINA_IP_LIST
+add list=CN address=103.116.76.0/23 comment=CHINA_IP_LIST
+add list=CN address=103.116.78.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.116.92.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.117.16.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.117.188.0/22 comment=CHINA_IP_LIST
@@ -751,7 +753,6 @@ add list=CN address=103.151.44.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.152.112.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.152.120.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.152.122.0/23 comment=CHINA_IP_LIST
-add list=CN address=103.152.14.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.152.152.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.152.168.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.152.170.0/23 comment=CHINA_IP_LIST
@@ -4818,15 +4819,14 @@ add list=CN address=120.68.0.0/14 comment=CHINA_IP_LIST
 add list=CN address=120.72.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=120.72.160.0/24 comment=CHINA_IP_LIST
 add list=CN address=120.72.162.0/23 comment=CHINA_IP_LIST
-add list=CN address=120.72.164.0/22 comment=CHINA_IP_LIST
+add list=CN address=120.72.166.0/23 comment=CHINA_IP_LIST
 add list=CN address=120.72.168.0/24 comment=CHINA_IP_LIST
 add list=CN address=120.72.170.0/23 comment=CHINA_IP_LIST
 add list=CN address=120.72.172.0/23 comment=CHINA_IP_LIST
-add list=CN address=120.72.174.0/24 comment=CHINA_IP_LIST
 add list=CN address=120.72.177.0/24 comment=CHINA_IP_LIST
 add list=CN address=120.72.178.0/24 comment=CHINA_IP_LIST
 add list=CN address=120.72.180.0/24 comment=CHINA_IP_LIST
-add list=CN address=120.72.182.0/23 comment=CHINA_IP_LIST
+add list=CN address=120.72.182.0/24 comment=CHINA_IP_LIST
 add list=CN address=120.72.184.0/22 comment=CHINA_IP_LIST
 add list=CN address=120.72.188.0/23 comment=CHINA_IP_LIST
 add list=CN address=120.72.190.0/24 comment=CHINA_IP_LIST
@@ -5568,10 +5568,6 @@ add list=CN address=154.72.44.0/24 comment=CHINA_IP_LIST
 add list=CN address=154.8.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=154.8.48.0/20 comment=CHINA_IP_LIST
 add list=CN address=154.89.32.0/20 comment=CHINA_IP_LIST
-add list=CN address=154.89.49.0/24 comment=CHINA_IP_LIST
-add list=CN address=154.89.50.0/23 comment=CHINA_IP_LIST
-add list=CN address=154.89.52.0/22 comment=CHINA_IP_LIST
-add list=CN address=154.89.56.0/21 comment=CHINA_IP_LIST
 add list=CN address=155.126.176.0/23 comment=CHINA_IP_LIST
 add list=CN address=156.107.160.0/24 comment=CHINA_IP_LIST
 add list=CN address=156.107.170.0/24 comment=CHINA_IP_LIST
@@ -5864,8 +5860,6 @@ add list=CN address=175.24.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=175.25.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=175.26.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=175.27.0.0/16 comment=CHINA_IP_LIST
-add list=CN address=175.29.107.0/24 comment=CHINA_IP_LIST
-add list=CN address=175.29.108.0/22 comment=CHINA_IP_LIST
 add list=CN address=175.30.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=175.42.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=175.44.0.0/16 comment=CHINA_IP_LIST
@@ -11080,7 +11074,7 @@ add list=CN address=8.152.0.0/13 comment=CHINA_IP_LIST
 add list=CN address=8.160.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=8.162.0.0/18 comment=CHINA_IP_LIST
 add list=CN address=8.163.0.0/16 comment=CHINA_IP_LIST
-add list=CN address=8.164.0.0/16 comment=CHINA_IP_LIST
+add list=CN address=8.164.0.0/14 comment=CHINA_IP_LIST
 add list=CN address=81.173.18.0/23 comment=CHINA_IP_LIST
 add list=CN address=81.173.20.0/22 comment=CHINA_IP_LIST
 add list=CN address=81.173.28.0/24 comment=CHINA_IP_LIST
