@@ -3860,6 +3860,7 @@ add list=CN address=111.223.8.0/21 comment=CHINA_IP_LIST
 add list=CN address=111.223.8.0/22 comment=CHINA_IP_LIST
 add list=CN address=111.224.0.0/14 comment=CHINA_IP_LIST
 add list=CN address=111.228.0.0/14 comment=CHINA_IP_LIST
+add list=CN address=111.228.0.0/18 comment=CHINA_IP_LIST
 add list=CN address=111.229.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=111.230.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=111.235.156.0/22 comment=CHINA_IP_LIST
@@ -4390,6 +4391,8 @@ add list=CN address=117.72.144.0/20 comment=CHINA_IP_LIST
 add list=CN address=117.72.16.0/23 comment=CHINA_IP_LIST
 add list=CN address=117.72.160.0/19 comment=CHINA_IP_LIST
 add list=CN address=117.72.192.0/19 comment=CHINA_IP_LIST
+add list=CN address=117.72.24.0/21 comment=CHINA_IP_LIST
+add list=CN address=117.72.240.0/21 comment=CHINA_IP_LIST
 add list=CN address=117.72.255.0/24 comment=CHINA_IP_LIST
 add list=CN address=117.72.32.0/19 comment=CHINA_IP_LIST
 add list=CN address=117.72.64.0/18 comment=CHINA_IP_LIST
@@ -5101,6 +5104,7 @@ add list=CN address=123.242.196.0/22 comment=CHINA_IP_LIST
 add list=CN address=123.244.0.0/14 comment=CHINA_IP_LIST
 add list=CN address=123.249.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=123.249.0.0/17 comment=CHINA_IP_LIST
+add list=CN address=123.253.52.0/23 comment=CHINA_IP_LIST
 add list=CN address=123.254.100.0/22 comment=CHINA_IP_LIST
 add list=CN address=123.254.96.0/21 comment=CHINA_IP_LIST
 add list=CN address=123.254.96.0/22 comment=CHINA_IP_LIST
@@ -5207,7 +5211,7 @@ add list=CN address=124.196.66.0/24 comment=CHINA_IP_LIST
 add list=CN address=124.196.72.0/24 comment=CHINA_IP_LIST
 add list=CN address=124.196.77.0/24 comment=CHINA_IP_LIST
 add list=CN address=124.196.80.0/22 comment=CHINA_IP_LIST
-add list=CN address=124.196.84.0/24 comment=CHINA_IP_LIST
+add list=CN address=124.196.84.0/23 comment=CHINA_IP_LIST
 add list=CN address=124.197.56.0/21 comment=CHINA_IP_LIST
 add list=CN address=124.20.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=124.200.0.0/13 comment=CHINA_IP_LIST
