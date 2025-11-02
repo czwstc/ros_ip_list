@@ -10040,6 +10040,7 @@ add list=CN address=45.113.184.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.113.20.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.113.200.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.113.204.0/22 comment=CHINA_IP_LIST
+add list=CN address=45.113.206.0/24 comment=CHINA_IP_LIST
 add list=CN address=45.113.208.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.113.212.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.113.216.0/22 comment=CHINA_IP_LIST
