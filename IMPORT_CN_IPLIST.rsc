@@ -2459,6 +2459,7 @@ add list=CN address=103.36.28.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.36.36.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.36.56.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.36.60.0/22 comment=CHINA_IP_LIST
+add list=CN address=103.36.63.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.36.64.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.36.72.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.36.96.0/22 comment=CHINA_IP_LIST
