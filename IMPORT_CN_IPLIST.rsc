@@ -8442,7 +8442,9 @@ add list=CN address=218.204.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=218.206.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=218.21.0.0/17 comment=CHINA_IP_LIST
 add list=CN address=218.21.128.0/17 comment=CHINA_IP_LIST
+add list=CN address=218.213.74.0/24 comment=CHINA_IP_LIST
 add list=CN address=218.213.85.0/24 comment=CHINA_IP_LIST
+add list=CN address=218.213.92.0/24 comment=CHINA_IP_LIST
 add list=CN address=218.22.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=218.24.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=218.240.0.0/14 comment=CHINA_IP_LIST
@@ -10100,7 +10102,7 @@ add list=CN address=45.117.252.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.117.68.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.117.8.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.119.104.0/22 comment=CHINA_IP_LIST
-add list=CN address=45.119.105.0/24 comment=CHINA_IP_LIST
+add list=CN address=45.119.104.0/23 comment=CHINA_IP_LIST
 add list=CN address=45.119.116.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.119.232.0/22 comment=CHINA_IP_LIST
 add list=CN address=45.119.52.0/22 comment=CHINA_IP_LIST
