@@ -4509,8 +4509,9 @@ add list=CN address=118.194.32.0/19 comment=CHINA_IP_LIST
 add list=CN address=118.195.0.0/17 comment=CHINA_IP_LIST
 add list=CN address=118.195.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=118.196.0.0/14 comment=CHINA_IP_LIST
-add list=CN address=118.196.0.0/17 comment=CHINA_IP_LIST
-add list=CN address=118.196.128.0/19 comment=CHINA_IP_LIST
+add list=CN address=118.196.0.0/16 comment=CHINA_IP_LIST
+add list=CN address=118.197.0.0/18 comment=CHINA_IP_LIST
+add list=CN address=118.197.64.0/19 comment=CHINA_IP_LIST
 add list=CN address=118.199.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=118.202.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=118.204.0.0/14 comment=CHINA_IP_LIST
