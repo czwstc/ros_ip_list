@@ -8647,6 +8647,7 @@ add list=CN address=220.154.128.0/21 comment=CHINA_IP_LIST
 add list=CN address=220.154.136.0/23 comment=CHINA_IP_LIST
 add list=CN address=220.154.139.0/24 comment=CHINA_IP_LIST
 add list=CN address=220.154.140.0/22 comment=CHINA_IP_LIST
+add list=CN address=220.154.144.0/24 comment=CHINA_IP_LIST
 add list=CN address=220.154.147.0/24 comment=CHINA_IP_LIST
 add list=CN address=220.154.16.0/22 comment=CHINA_IP_LIST
 add list=CN address=220.155.0.0/16 comment=CHINA_IP_LIST
