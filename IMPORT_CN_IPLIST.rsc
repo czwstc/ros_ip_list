@@ -3156,7 +3156,6 @@ add list=CN address=103.72.172.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.72.180.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.72.20.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.72.224.0/22 comment=CHINA_IP_LIST
-add list=CN address=103.72.224.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.72.228.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.72.232.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.72.236.0/22 comment=CHINA_IP_LIST
