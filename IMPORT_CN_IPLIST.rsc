@@ -9034,8 +9034,6 @@ add list=CN address=223.64.0.0/10 comment=CHINA_IP_LIST
 add list=CN address=223.64.0.0/11 comment=CHINA_IP_LIST
 add list=CN address=223.8.0.0/13 comment=CHINA_IP_LIST
 add list=CN address=223.96.0.0/12 comment=CHINA_IP_LIST
-add list=CN address=23.247.128.0/24 comment=CHINA_IP_LIST
-add list=CN address=23.247.130.0/24 comment=CHINA_IP_LIST
 add list=CN address=27.0.128.0/22 comment=CHINA_IP_LIST
 add list=CN address=27.0.128.0/24 comment=CHINA_IP_LIST
 add list=CN address=27.0.130.0/23 comment=CHINA_IP_LIST
