@@ -5613,6 +5613,7 @@ add list=CN address=156.224.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=156.227.239.0/24 comment=CHINA_IP_LIST
 add list=CN address=156.232.10.0/23 comment=CHINA_IP_LIST
 add list=CN address=156.232.9.0/24 comment=CHINA_IP_LIST
+add list=CN address=156.246.16.0/24 comment=CHINA_IP_LIST
 add list=CN address=157.0.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=157.10.112.0/23 comment=CHINA_IP_LIST
 add list=CN address=157.10.118.0/23 comment=CHINA_IP_LIST
