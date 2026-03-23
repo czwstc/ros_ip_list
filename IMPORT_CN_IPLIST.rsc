@@ -5185,9 +5185,7 @@ add list=CN address=124.14.224.0/19 comment=CHINA_IP_LIST
 add list=CN address=124.14.24.0/21 comment=CHINA_IP_LIST
 add list=CN address=124.14.32.0/20 comment=CHINA_IP_LIST
 add list=CN address=124.14.48.0/22 comment=CHINA_IP_LIST
-add list=CN address=124.14.49.0/24 comment=CHINA_IP_LIST
 add list=CN address=124.14.5.0/24 comment=CHINA_IP_LIST
-add list=CN address=124.14.50.0/23 comment=CHINA_IP_LIST
 add list=CN address=124.14.52.0/22 comment=CHINA_IP_LIST
 add list=CN address=124.14.56.0/21 comment=CHINA_IP_LIST
 add list=CN address=124.14.64.0/18 comment=CHINA_IP_LIST
