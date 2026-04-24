@@ -7002,7 +7002,7 @@ add list=CN address=203.119.192.0/18 comment=CHINA_IP_LIST
 add list=CN address=203.119.24.0/21 comment=CHINA_IP_LIST
 add list=CN address=203.119.25.0/24 comment=CHINA_IP_LIST
 add list=CN address=203.119.26.0/23 comment=CHINA_IP_LIST
-add list=CN address=203.119.28.0/24 comment=CHINA_IP_LIST
+add list=CN address=203.119.28.0/23 comment=CHINA_IP_LIST
 add list=CN address=203.119.30.0/24 comment=CHINA_IP_LIST
 add list=CN address=203.119.32.0/22 comment=CHINA_IP_LIST
 add list=CN address=203.119.80.0/22 comment=CHINA_IP_LIST
