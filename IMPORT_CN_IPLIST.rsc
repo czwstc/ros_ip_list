@@ -677,7 +677,6 @@ add list=CN address=103.143.92.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.144.136.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.144.158.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.144.240.0/23 comment=CHINA_IP_LIST
-add list=CN address=103.144.245.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.144.40.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.144.52.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.144.66.0/23 comment=CHINA_IP_LIST
