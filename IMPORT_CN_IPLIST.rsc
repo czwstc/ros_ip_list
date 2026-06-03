@@ -1358,6 +1358,7 @@ add list=CN address=103.213.48.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.213.49.0/24 comment=CHINA_IP_LIST
 add list=CN address=103.213.50.0/23 comment=CHINA_IP_LIST
 add list=CN address=103.213.52.0/22 comment=CHINA_IP_LIST
+add list=CN address=103.213.56.0/21 comment=CHINA_IP_LIST
 add list=CN address=103.213.56.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.213.60.0/22 comment=CHINA_IP_LIST
 add list=CN address=103.213.64.0/19 comment=CHINA_IP_LIST
@@ -8432,7 +8433,6 @@ add list=CN address=211.99.96.0/20 comment=CHINA_IP_LIST
 add list=CN address=212.103.62.0/24 comment=CHINA_IP_LIST
 add list=CN address=212.129.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=212.64.0.0/17 comment=CHINA_IP_LIST
-add list=CN address=216.38.170.0/23 comment=CHINA_IP_LIST
 add list=CN address=218.0.0.0/11 comment=CHINA_IP_LIST
 add list=CN address=218.0.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=218.1.0.0/16 comment=CHINA_IP_LIST
@@ -8688,6 +8688,7 @@ add list=CN address=220.152.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=220.154.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=220.154.0.0/20 comment=CHINA_IP_LIST
 add list=CN address=220.154.128.0/20 comment=CHINA_IP_LIST
+add list=CN address=220.154.144.0/24 comment=CHINA_IP_LIST
 add list=CN address=220.154.147.0/24 comment=CHINA_IP_LIST
 add list=CN address=220.154.16.0/22 comment=CHINA_IP_LIST
 add list=CN address=220.154.64.0/20 comment=CHINA_IP_LIST
@@ -11075,7 +11076,8 @@ add list=CN address=61.176.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=61.177.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=61.178.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=61.179.0.0/16 comment=CHINA_IP_LIST
-add list=CN address=61.18.0.0/17 comment=CHINA_IP_LIST
+add list=CN address=61.18.0.0/18 comment=CHINA_IP_LIST
+add list=CN address=61.18.64.0/19 comment=CHINA_IP_LIST
 add list=CN address=61.180.0.0/17 comment=CHINA_IP_LIST
 add list=CN address=61.180.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=61.181.0.0/16 comment=CHINA_IP_LIST
