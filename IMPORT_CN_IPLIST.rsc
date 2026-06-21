@@ -6124,7 +6124,7 @@ add list=CN address=193.112.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=193.119.0.0/19 comment=CHINA_IP_LIST
 add list=CN address=193.9.44.0/24 comment=CHINA_IP_LIST
 add list=CN address=193.9.46.0/24 comment=CHINA_IP_LIST
-add list=CN address=194.138.202.0/24 comment=CHINA_IP_LIST
+add list=CN address=194.138.202.0/23 comment=CHINA_IP_LIST
 add list=CN address=194.138.245.0/24 comment=CHINA_IP_LIST
 add list=CN address=198.175.100.0/22 comment=CHINA_IP_LIST
 add list=CN address=198.208.112.0/23 comment=CHINA_IP_LIST
