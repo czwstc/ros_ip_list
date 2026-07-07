@@ -6080,6 +6080,7 @@ add list=CN address=183.84.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=183.91.128.0/22 comment=CHINA_IP_LIST
 add list=CN address=183.91.136.0/21 comment=CHINA_IP_LIST
 add list=CN address=183.91.144.0/20 comment=CHINA_IP_LIST
+add list=CN address=183.91.37.0/24 comment=CHINA_IP_LIST
 add list=CN address=183.91.39.0/24 comment=CHINA_IP_LIST
 add list=CN address=183.91.40.0/21 comment=CHINA_IP_LIST
 add list=CN address=183.92.0.0/14 comment=CHINA_IP_LIST
@@ -8212,7 +8213,6 @@ add list=CN address=211.144.16.0/24 comment=CHINA_IP_LIST
 add list=CN address=211.144.18.0/23 comment=CHINA_IP_LIST
 add list=CN address=211.144.192.0/18 comment=CHINA_IP_LIST
 add list=CN address=211.144.20.0/24 comment=CHINA_IP_LIST
-add list=CN address=211.144.22.0/24 comment=CHINA_IP_LIST
 add list=CN address=211.144.24.0/24 comment=CHINA_IP_LIST
 add list=CN address=211.144.27.0/24 comment=CHINA_IP_LIST
 add list=CN address=211.144.28.0/23 comment=CHINA_IP_LIST
