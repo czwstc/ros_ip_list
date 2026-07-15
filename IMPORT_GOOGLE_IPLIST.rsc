@@ -85,6 +85,7 @@ add list=Google address=199.36.154.0/23 comment=GOOGLE_IP_LIST
 add list=Google address=199.36.156.0/24 comment=GOOGLE_IP_LIST
 add list=Google address=199.192.112.0/22 comment=GOOGLE_IP_LIST
 add list=Google address=199.223.232.0/21 comment=GOOGLE_IP_LIST
+add list=Google address=200.226.0.0/16 comment=GOOGLE_IP_LIST
 add list=Google address=207.175.0.0/16 comment=GOOGLE_IP_LIST
 add list=Google address=207.223.160.0/20 comment=GOOGLE_IP_LIST
 add list=Google address=208.65.152.0/22 comment=GOOGLE_IP_LIST

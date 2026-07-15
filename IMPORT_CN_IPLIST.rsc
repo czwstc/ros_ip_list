@@ -5182,7 +5182,7 @@ add list=CN address=124.118.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=124.126.0.0/15 comment=CHINA_IP_LIST
 add list=CN address=124.128.0.0/13 comment=CHINA_IP_LIST
 add list=CN address=124.14.0.0/20 comment=CHINA_IP_LIST
-add list=CN address=124.14.12.0/24 comment=CHINA_IP_LIST
+add list=CN address=124.14.12.0/23 comment=CHINA_IP_LIST
 add list=CN address=124.14.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=124.14.15.0/24 comment=CHINA_IP_LIST
 add list=CN address=124.14.16.0/21 comment=CHINA_IP_LIST
