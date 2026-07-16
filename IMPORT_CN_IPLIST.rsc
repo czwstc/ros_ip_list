@@ -8523,7 +8523,8 @@ add list=CN address=218.247.0.0/18 comment=CHINA_IP_LIST
 add list=CN address=218.247.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=218.247.64.0/19 comment=CHINA_IP_LIST
 add list=CN address=218.249.0.0/16 comment=CHINA_IP_LIST
-add list=CN address=218.252.0.0/17 comment=CHINA_IP_LIST
+add list=CN address=218.252.0.0/18 comment=CHINA_IP_LIST
+add list=CN address=218.252.64.0/19 comment=CHINA_IP_LIST
 add list=CN address=218.253.0.0/18 comment=CHINA_IP_LIST
 add list=CN address=218.26.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=218.27.0.0/16 comment=CHINA_IP_LIST
