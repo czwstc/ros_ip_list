@@ -58,6 +58,7 @@ add list=Google address=136.22.160.0/20 comment=GOOGLE_IP_LIST
 add list=Google address=136.22.176.0/21 comment=GOOGLE_IP_LIST
 add list=Google address=136.22.184.0/23 comment=GOOGLE_IP_LIST
 add list=Google address=136.22.186.0/24 comment=GOOGLE_IP_LIST
+add list=Google address=136.23.39.0/24 comment=GOOGLE_IP_LIST
 add list=Google address=136.23.48.0/20 comment=GOOGLE_IP_LIST
 add list=Google address=136.23.64.0/18 comment=GOOGLE_IP_LIST
 add list=Google address=136.64.0.0/11 comment=GOOGLE_IP_LIST
