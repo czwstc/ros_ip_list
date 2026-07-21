@@ -5590,6 +5590,7 @@ add list=CN address=151.158.72.0/23 comment=CHINA_IP_LIST
 add list=CN address=151.158.78.0/23 comment=CHINA_IP_LIST
 add list=CN address=151.158.80.0/23 comment=CHINA_IP_LIST
 add list=CN address=151.243.189.0/24 comment=CHINA_IP_LIST
+add list=CN address=151.244.135.0/24 comment=CHINA_IP_LIST
 add list=CN address=152.104.128.0/17 comment=CHINA_IP_LIST
 add list=CN address=152.136.0.0/16 comment=CHINA_IP_LIST
 add list=CN address=153.0.0.0/16 comment=CHINA_IP_LIST
