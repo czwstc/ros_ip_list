@@ -5843,7 +5843,7 @@ add list=CN_WITH_IIP address=165.101.70.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=165.101.70.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=165.99.4.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=165.99.42.0/23 comment=CHINA_IP_LIST_INTERNAL
-add list=CN_WITH_IIP address=166.0.100.0/24 comment=CHINA_IP_LIST_INTERNAL
+add list=CN_WITH_IIP address=166.0.100.0/23 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=166.0.97.0/24 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=166.111.0.0/16 comment=CHINA_IP_LIST_INTERNAL
 add list=CN_WITH_IIP address=167.139.0.0/16 comment=CHINA_IP_LIST_INTERNAL
