@@ -7,8 +7,8 @@
 
 ### 已添加的 IP 列表与数据源：
 
-1. **CN IP**:
-   - 数据源：[chnroutes2](https://github.com/misakaio/chnroutes2) / [china-ip-list](https://github.com/mayaxcn/china-ip-list)
+1. **CN IP & CN IP with Internal IP**:
+   - 数据源：[chnroutes2](https://github.com/misakaio/chnroutes2) / [china-ip-list](https://github.com/mayaxcn/china-ip-list) + **Bilibili** (AS59077, AS140633) + **微信 / 腾讯** (AS132203, AS45090, AS133475)
    - 生成文件：`IMPORT_CN_IPLIST.rsc`、`IMPORT_CN_IPLIST_INTERNAL.rsc`
    - List 名：`CN` / `CN_WITH_IIP`
 

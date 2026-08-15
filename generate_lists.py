@@ -1,18 +1,9 @@
 #!/usr/bin/env python3
 """
-RouterOS Address List Generator for GitHub and Global-ForWork:
+RouterOS Address List Generator for:
+- CN (China IP + Bilibili + WeChat/Tencent + Internal)
 - GitHub
-- Cloudflare
-- Akamai
-- Amazon CloudFront
-- Fastly
-- Google & Google Cloud CDN
-- OpenAI (ChatGPT Actions, GPTBot, ChatGPT-User, SearchBot, AS400585)
-- Anthropic (AS399358)
-- Grok / X (AS13414)
-- Discord (AS12414)
-- Medium (Cloudflare)
-- Perplexity (PerplexityBot, Perplexity-User)
+- Global-ForWork (Cloudflare, Akamai, CloudFront, Fastly, Google, Google Cloud CDN, OpenAI, Anthropic, Grok, Discord, Medium, Perplexity, GitHub)
 """
 
 import sys
@@ -32,6 +23,20 @@ def fetch_json(url, retries=3, delay=2):
             with urllib.request.urlopen(req, timeout=20) as resp:
                 data = resp.read().decode("utf-8")
                 return json.loads(data)
+        except Exception as e:
+            print(f"[WARN] Fetching {url} failed (attempt {attempt}/{retries}): {e}", file=sys.stderr)
+            if attempt < retries:
+                time.sleep(delay * attempt)
+            else:
+                print(f"[ERROR] Failed to fetch {url} after {retries} attempts.", file=sys.stderr)
+                raise
+
+def fetch_text(url, retries=3, delay=2):
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                return resp.read().decode("utf-8")
         except Exception as e:
             print(f"[WARN] Fetching {url} failed (attempt {attempt}/{retries}): {e}", file=sys.stderr)
             if attempt < retries:
@@ -148,7 +153,6 @@ def get_google_ips():
 
 def get_akamai_ips():
     print("[INFO] Fetching Akamai BGP IP ranges...")
-    # Key Akamai ASNs: AS20940 (Akamai Technologies), AS16625 (Akamai International), AS35994 (Akamai Edge)
     asns = ["AS20940", "AS16625", "AS35994"]
     networks = set()
     for asn in asns:
@@ -178,7 +182,6 @@ def get_openai_ips():
         except Exception as e:
             print(f"[WARN] Failed fetching OpenAI feed {u}: {e}", file=sys.stderr)
             
-    # Also fetch OpenAI ASN AS400585
     asn_nets = get_asn_prefixes("AS400585")
     networks |= asn_nets
     print(f"[INFO] Found {len(networks)} OpenAI IPv4 subnets.")
@@ -186,21 +189,18 @@ def get_openai_ips():
 
 def get_anthropic_ips():
     print("[INFO] Fetching Anthropic IP ranges...")
-    # Anthropic PBC operates AS399358
     networks = get_asn_prefixes("AS399358")
     print(f"[INFO] Found {len(networks)} Anthropic IPv4 subnets.")
     return networks
 
 def get_grok_ips():
     print("[INFO] Fetching Grok / X IP ranges...")
-    # X / Twitter operates AS13414
     networks = get_asn_prefixes("AS13414")
     print(f"[INFO] Found {len(networks)} Grok / X IPv4 subnets.")
     return networks
 
 def get_discord_ips():
     print("[INFO] Fetching Discord IP ranges...")
-    # Discord operates AS12414
     networks = get_asn_prefixes("AS12414")
     print(f"[INFO] Found {len(networks)} Discord IPv4 subnets.")
     return networks
@@ -224,17 +224,74 @@ def get_perplexity_ips():
     print(f"[INFO] Found {len(networks)} Perplexity IPv4 subnets.")
     return networks
 
-def generate_rsc_content(list_name, comment, collapsed_networks):
+def get_cn_ips():
+    print("[INFO] Fetching China IP lists...")
+    urls = [
+        "https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt",
+        "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt"
+    ]
+    networks = set()
+    for u in urls:
+        try:
+            text = fetch_text(u)
+            for line in text.splitlines():
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    net = parse_ipv4_network(line)
+                    if net:
+                        networks.add(net)
+        except Exception as e:
+            print(f"[ERROR] Failed fetching {u}: {e}", file=sys.stderr)
+
+    print("[INFO] Fetching Bilibili and WeChat/Tencent IP ranges...")
+    bilibili_asns = ["AS59077", "AS140633"]
+    wechat_asns = ["AS132203", "AS45090", "AS133475"]
+    for asn in bilibili_asns:
+        nets = get_asn_prefixes(asn)
+        print(f"[INFO] Bilibili {asn}: {len(nets)} prefixes fetched.")
+        networks |= nets
+    for asn in wechat_asns:
+        nets = get_asn_prefixes(asn)
+        print(f"[INFO] WeChat/Tencent {asn}: {len(nets)} prefixes fetched.")
+        networks |= nets
+
+    print(f"[INFO] Total raw subnets collected for CN (with Bilibili & WeChat): {len(networks)}")
+    return networks
+
+def generate_rsc_content(list_name, comment, collapsed_networks, extra_lines=None):
     lines = ["/ip firewall address-list"]
     for net in collapsed_networks:
         lines.append(f'add list={list_name} address={net} comment="{comment}"')
+    if extra_lines:
+        lines.extend(extra_lines)
     return "\n".join(lines) + "\n"
 
 def main():
     parser = argparse.ArgumentParser(description="Generate RouterOS IP Lists")
-    parser.add_argument("--target", choices=["all", "github", "global-forwork"], default="all",
+    parser.add_argument("--target", choices=["all", "cn", "github", "global-forwork"], default="all",
                         help="Target list to generate (default: all)")
     args = parser.parse_args()
+
+    if args.target in ("all", "cn"):
+        cn_networks = get_cn_ips()
+        collapsed_cn = list(ipaddress.collapse_addresses(cn_networks))
+        
+        # IMPORT_CN_IPLIST.rsc
+        rsc_cn = generate_rsc_content("CN", "CHINA_IP_LIST", collapsed_cn)
+        with open("IMPORT_CN_IPLIST.rsc", "w", encoding="utf-8") as f:
+            f.write(rsc_cn)
+        print(f"[SUCCESS] Wrote {len(collapsed_cn)} collapsed CIDRs to IMPORT_CN_IPLIST.rsc")
+
+        # IMPORT_CN_IPLIST_INTERNAL.rsc
+        internal_lines = [
+            'add list=CN_WITH_IIP address=10.0.0.0/8 comment="CHINA_IP_LIST_INTERNAL"',
+            'add list=CN_WITH_IIP address=172.16.0.0/12 comment="CHINA_IP_LIST_INTERNAL"',
+            'add list=CN_WITH_IIP address=192.168.0.0/16 comment="CHINA_IP_LIST_INTERNAL"'
+        ]
+        rsc_cn_internal = generate_rsc_content("CN_WITH_IIP", "CHINA_IP_LIST_INTERNAL", collapsed_cn, internal_lines)
+        with open("IMPORT_CN_IPLIST_INTERNAL.rsc", "w", encoding="utf-8") as f:
+            f.write(rsc_cn_internal)
+        print(f"[SUCCESS] Wrote {len(collapsed_cn) + 3} rules to IMPORT_CN_IPLIST_INTERNAL.rsc")
 
     gh_networks = None
     if args.target in ("all", "github"):
