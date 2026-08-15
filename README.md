@@ -27,7 +27,7 @@
    - 生成文件：`IMPORT_GITHUB_IPLIST.rsc`
    - List 名：`GitHub`
 
-5. **Global-ForWork IP (CDN & 办公综合列表)**:
+5. **Global-ForWork IP (CDN, AI & 办公综合列表)**:
    - 包含服务与数据源：
      - **Cloudflare**: [Cloudflare IP API](https://api.cloudflare.com/client/v4/ips)
      - **Akamai**: BGP 宣告路由 (AS20940, AS16625, AS35994)
@@ -35,6 +35,12 @@
      - **Fastly**: [Fastly Public IP API](https://api.fastly.com/public-ip-list)
      - **Google & Google Cloud CDN**: [Google Ranges](https://www.gstatic.com/ipranges/goog.json) / [Google Cloud Ranges](https://www.gstatic.com/ipranges/cloud.json)
      - **GitHub**: [GitHub Meta API](https://api.github.com/meta)
+     - **OpenAI (ChatGPT / GPTBot / Egress)**: [OpenAI IP Feeds](https://openai.com/chatgpt-actions.json) 与 AS400585
+     - **Anthropic (Claude)**: BGP 宣告路由 AS399358 与 CDN 边缘
+     - **Grok / X (Twitter)**: BGP 宣告路由 AS13414
+     - **Discord (Voice & RTC Relay)**: BGP 宣告路由 AS12414 与 CDN 边缘
+     - **Medium**: Cloudflare 边缘托管
+     - **Perplexity**: [PerplexityBot / User Feeds](https://www.perplexity.com/perplexitybot.json)
    - 生成文件：`IMPORT_GLOBAL_FORWORK_IPLIST.rsc`
    - List 名：`Global-ForWork`
 

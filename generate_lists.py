@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
 """
-RouterOS Address List Generator for GitHub and Global-ForWork (Cloudflare, Akamai, CloudFront, Fastly, Google, Google Cloud, GitHub).
+RouterOS Address List Generator for GitHub and Global-ForWork:
+- GitHub
+- Cloudflare
+- Akamai
+- Amazon CloudFront
+- Fastly
+- Google & Google Cloud CDN
+- OpenAI (ChatGPT Actions, GPTBot, ChatGPT-User, SearchBot, AS400585)
+- Anthropic (AS399358)
+- Grok / X (AS13414)
+- Discord (AS12414)
+- Medium (Cloudflare)
+- Perplexity (PerplexityBot, Perplexity-User)
 """
 
 import sys
@@ -41,6 +53,19 @@ def parse_ipv4_network(cidr_str):
     except ValueError:
         pass
     return None
+
+def get_asn_prefixes(asn):
+    networks = set()
+    url = f"https://stat.ripe.net/data/announced-prefixes/data.json?resource={asn}"
+    try:
+        data = fetch_json(url)
+        for item in data.get("data", {}).get("prefixes", []):
+            net = parse_ipv4_network(item.get("prefix"))
+            if net:
+                networks.add(net)
+    except Exception as e:
+        print(f"[ERROR] Failed to fetch BGP prefixes for {asn}: {e}", file=sys.stderr)
+    return networks
 
 def get_github_ips():
     print("[INFO] Fetching GitHub IP ranges...")
@@ -127,20 +152,76 @@ def get_akamai_ips():
     asns = ["AS20940", "AS16625", "AS35994"]
     networks = set()
     for asn in asns:
-        url = f"https://stat.ripe.net/data/announced-prefixes/data.json?resource={asn}"
-        try:
-            data = fetch_json(url)
-            asn_prefixes = 0
-            for item in data.get("data", {}).get("prefixes", []):
-                net = parse_ipv4_network(item.get("prefix"))
-                if net:
-                    networks.add(net)
-                    asn_prefixes += 1
-            print(f"[INFO] Akamai {asn}: {asn_prefixes} prefixes fetched.")
-        except Exception as e:
-            print(f"[ERROR] Failed to fetch Akamai {asn}: {e}", file=sys.stderr)
+        nets = get_asn_prefixes(asn)
+        print(f"[INFO] Akamai {asn}: {len(nets)} prefixes fetched.")
+        networks |= nets
 
     print(f"[INFO] Found total {len(networks)} Akamai IPv4 subnets.")
+    return networks
+
+def get_openai_ips():
+    print("[INFO] Fetching OpenAI IP ranges...")
+    urls = [
+        "https://openai.com/chatgpt-actions.json",
+        "https://openai.com/gptbot.json",
+        "https://openai.com/chatgpt-user.json",
+        "https://openai.com/searchbot.json"
+    ]
+    networks = set()
+    for u in urls:
+        try:
+            data = fetch_json(u)
+            for item in data.get("prefixes", []):
+                net = parse_ipv4_network(item.get("ipv4Prefix"))
+                if net:
+                    networks.add(net)
+        except Exception as e:
+            print(f"[WARN] Failed fetching OpenAI feed {u}: {e}", file=sys.stderr)
+            
+    # Also fetch OpenAI ASN AS400585
+    asn_nets = get_asn_prefixes("AS400585")
+    networks |= asn_nets
+    print(f"[INFO] Found {len(networks)} OpenAI IPv4 subnets.")
+    return networks
+
+def get_anthropic_ips():
+    print("[INFO] Fetching Anthropic IP ranges...")
+    # Anthropic PBC operates AS399358
+    networks = get_asn_prefixes("AS399358")
+    print(f"[INFO] Found {len(networks)} Anthropic IPv4 subnets.")
+    return networks
+
+def get_grok_ips():
+    print("[INFO] Fetching Grok / X IP ranges...")
+    # X / Twitter operates AS13414
+    networks = get_asn_prefixes("AS13414")
+    print(f"[INFO] Found {len(networks)} Grok / X IPv4 subnets.")
+    return networks
+
+def get_discord_ips():
+    print("[INFO] Fetching Discord IP ranges...")
+    # Discord operates AS12414
+    networks = get_asn_prefixes("AS12414")
+    print(f"[INFO] Found {len(networks)} Discord IPv4 subnets.")
+    return networks
+
+def get_perplexity_ips():
+    print("[INFO] Fetching Perplexity IP ranges...")
+    urls = [
+        "https://www.perplexity.com/perplexitybot.json",
+        "https://www.perplexity.com/perplexity-user.json"
+    ]
+    networks = set()
+    for u in urls:
+        try:
+            data = fetch_json(u)
+            for item in data.get("prefixes", []):
+                net = parse_ipv4_network(item.get("ipv4Prefix"))
+                if net:
+                    networks.add(net)
+        except Exception as e:
+            print(f"[WARN] Failed fetching Perplexity feed {u}: {e}", file=sys.stderr)
+    print(f"[INFO] Found {len(networks)} Perplexity IPv4 subnets.")
     return networks
 
 def generate_rsc_content(list_name, comment, collapsed_networks):
@@ -172,6 +253,11 @@ def main():
         fastly_networks = get_fastly_ips()
         google_networks = get_google_ips()
         akamai_networks = get_akamai_ips()
+        openai_networks = get_openai_ips()
+        anthropic_networks = get_anthropic_ips()
+        grok_networks = get_grok_ips()
+        discord_networks = get_discord_ips()
+        perplexity_networks = get_perplexity_ips()
 
         all_forwork = (
             gh_networks
@@ -180,6 +266,11 @@ def main():
             | fastly_networks
             | google_networks
             | akamai_networks
+            | openai_networks
+            | anthropic_networks
+            | grok_networks
+            | discord_networks
+            | perplexity_networks
         )
         print(f"[INFO] Total raw subnets collected for Global-ForWork: {len(all_forwork)}")
         collapsed_forwork = list(ipaddress.collapse_addresses(all_forwork))
