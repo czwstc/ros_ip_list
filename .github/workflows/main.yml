@@ -8,9 +8,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
 
     - name: download cn cidr
       run: |
@@ -26,8 +33,19 @@ jobs:
       run: |
         chmod +x ros-gen-TG.sh
         ./ros-gen-TG.sh
+
+    - name: download github cidr
+      run: |
+        chmod +x ros-gen-GitHub.sh
+        ./ros-gen-GitHub.sh
+
+    - name: download global forwork cidr
+      run: |
+        chmod +x ros-gen-Global-ForWork.sh
+        ./ros-gen-Global-ForWork.sh
         
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        message: 'Auto update IP lists [skip ci]'
