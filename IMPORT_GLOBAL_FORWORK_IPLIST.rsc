@@ -3988,6 +3988,7 @@ add list=Global-ForWork address=120.253.241.160/27 comment="GLOBAL_FORWORK_IP_LI
 add list=Global-ForWork address=120.253.245.128/26 comment="GLOBAL_FORWORK_IP_LIST"
 add list=Global-ForWork address=120.253.245.192/27 comment="GLOBAL_FORWORK_IP_LIST"
 add list=Global-ForWork address=121.78.46.0/24 comment="GLOBAL_FORWORK_IP_LIST"
+add list=Global-ForWork address=121.254.136.0/24 comment="GLOBAL_FORWORK_IP_LIST"
 add list=Global-ForWork address=122.2.208.0/24 comment="GLOBAL_FORWORK_IP_LIST"
 add list=Global-ForWork address=122.252.32.0/19 comment="GLOBAL_FORWORK_IP_LIST"
 add list=Global-ForWork address=122.252.128.0/20 comment="GLOBAL_FORWORK_IP_LIST"
