@@ -1,4 +1,6 @@
 /ip firewall address-list
+add list=GitHub address=3.41.210.0/24 comment="GITHUB_IP_LIST"
+add list=GitHub address=3.42.157.0/24 comment="GITHUB_IP_LIST"
 add list=GitHub address=3.219.87.128/32 comment="GITHUB_IP_LIST"
 add list=GitHub address=4.147.189.192/28 comment="GITHUB_IP_LIST"
 add list=GitHub address=4.148.0.0/14 comment="GITHUB_IP_LIST"
